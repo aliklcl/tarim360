@@ -100,3 +100,19 @@ vendor/
 analyze_out*.txt
 build_out.txt
 analysis.txt
+
+# Scratch scripts
+scratch/
+
+# Compiled binaries
+*.apk
+*.aab
+*.exe
+tempCodeRunnerFile.*
+
+# Log files
+*.log
+run_windows_log.txt
+win_build_local_log.txt
+windows_build.cmd
+windows_run.cmd
