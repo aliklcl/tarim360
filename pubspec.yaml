@@ -1,0 +1,79 @@
+name: tarla_takip
+description: "Tarım360 - Akıllı Tarla Yönetim Uygulaması"
+publish_to: 'none'
+
+version: 1.1.0+2
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  sqflite: ^2.4.2
+  sqflite_common_ffi: ^2.4.0+2
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  flutter_map: ^8.2.2
+  geolocator: ^14.0.2
+  latlong2: ^0.9.1
+  mobile_scanner: ^7.2.0
+  qr_flutter: ^4.1.0
+  file_picker: ^10.3.2
+  image_picker: ^1.2.0
+  url_launcher: ^6.3.2
+  share_plus: ^10.1.4
+  open_file: ^3.3.2
+  http: ^1.6.0
+  pdf: ^3.11.3
+  connectivity_plus: ^6.1.4
+  firebase_core: 3.12.1
+  cloud_firestore: 5.6.5
+  firebase_auth: 5.5.1
+  firebase_crashlytics: ^4.3.4
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.7
+  fl_chart: ^1.2.0
+  flutter_animate: ^4.5.2
+  google_fonts: ^8.1.0
+  flutter_riverpod: ^3.3.1
+  logger: ^2.4.0
+  google_sign_in: ^7.2.0
+  image: ^4.8.0
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+dependency_overrides:
+  firebase_core:
+    path: vendor/firebase_core_local
+  firebase_auth:
+    path: vendor/firebase_auth_local
+  cloud_firestore:
+    path: vendor/cloud_firestore_local
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/backgrounds/
+    - assets/fonts/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#1D3B14" # Beyaz yerine logonun koyu yeşili
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+  remove_alpha_ios: true

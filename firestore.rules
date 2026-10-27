@@ -1,0 +1,32 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMember(aileId) {
+      return signedIn() &&
+        exists(/databases/$(database)/documents/aileler/$(aileId)/uyeler/$(request.auth.uid));
+    }
+
+    match /aileler/{aileId} {
+      allow read: if isMember(aileId);
+      allow create: if signedIn() &&
+        request.resource.data.olusturanKullanici == request.auth.uid;
+      allow update, delete: if isMember(aileId);
+
+      match /uyeler/{uyeId} {
+        allow read: if isMember(aileId);
+        allow create, update: if signedIn() &&
+          (uyeId == request.auth.uid || isMember(aileId));
+        allow delete: if isMember(aileId);
+      }
+
+      match /tarlalar/{tarlaId} {
+        allow read, write: if isMember(aileId);
+      }
+    }
+  }
+}

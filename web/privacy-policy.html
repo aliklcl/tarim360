@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarim360 Gizlilik Politikasi</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f1e6;
+        --card: #fffdf7;
+        --text: #243122;
+        --muted: #5d6756;
+        --line: #d7d2bf;
+        --accent: #476f3a;
+        --accent-soft: #e8f0e3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top right, #edf4e8, transparent 28%),
+          linear-gradient(180deg, #f8f6ee 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 18px 56px;
+      }
+
+      .hero,
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 18px 40px rgba(36, 49, 34, 0.06);
+      }
+
+      .hero {
+        padding: 28px;
+        margin-bottom: 18px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 14px 0 10px;
+        font-size: clamp(30px, 6vw, 44px);
+        line-height: 1.05;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .card {
+        padding: 24px;
+        margin-bottom: 14px;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .note {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-radius: 16px;
+        background: #fff7df;
+        border: 1px solid #ebd79a;
+        color: #5f4f14;
+      }
+
+      .footer {
+        margin-top: 18px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Tarim360</span>
+        <h1>Gizlilik Politikasi</h1>
+        <p>
+          Son guncelleme: 2026-05-11. Bu sayfa Tarim360 uygulamasinin hangi
+          verileri topladigini, neden kullandigini ve nasil korudugunu aciklar.
+        </p>
+        <div class="note">
+          Bu sayfadaki iletisim bilgileri guncel gelistirici bilgilerine gore
+          duzenlenmistir.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Toplanan Veriler</h2>
+        <ul>
+          <li>Yerel veya bulut hesap icin kullanici adi ve e-posta gibi hesap verileri</li>
+          <li>Tarla, urun, not, islem gecmisi ve alan bilgileri</li>
+          <li>Tarla merkezi ve sinir noktalarina ait konum bilgileri</li>
+          <li>Kullanici tarafindan eklenen tarla ve bitki fotograflari</li>
+          <li>Uygulama kararliligini izlemek icin teknik hata ve tanilama verileri</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Verileri Neden Kullaniyoruz</h2>
+        <ul>
+          <li>Tarla kayitlarini saklamak, duzenlemek ve raporlamak</li>
+          <li>Harita uzerinde konum gostermek ve sinir noktasi eklemek</li>
+          <li>QR, fotograf ve rapor ozelliklerini calistirmak</li>
+          <li>Bulut modunda ayni ekipteki kullanicilar arasinda senkronizasyon saglamak</li>
+          <li>Hatayi tespit edip uygulamayi daha kararli hale getirmek</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Veriler Nerede Tutulur</h2>
+        <ul>
+          <li>Yerel modda veriler cihazdaki uygulama veritabani ve yedek dosyalarinda tutulur</li>
+          <li>Bulut modu aciksa veriler Firebase Authentication ve Cloud Firestore uzerinde saklanir</li>
+          <li>Teknik hata verileri Firebase Crashlytics uzerinden raporlanir</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Izinler</h2>
+        <ul>
+          <li>Konum izni, tarla konumu kaydetmek ve sinir noktasi eklemek icin kullanilir</li>
+          <li>Kamera izni, QR kod okutmak ve fotograf cekmek icin kullanilir</li>
+          <li>Uygulama arka planda surekli konum takibi yapmaz</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Paylasim ve Guvenlik</h2>
+        <ul>
+          <li>Veriler reklam amacli satilmaz</li>
+          <li>Bulut modunda veriler yalnizca ayni ekip veya aile koduna sahip yetkili kullanicilarla paylasilir</li>
+          <li>Yedek dosyalari butunluk kontrolu icin checksum ile dogrulanir</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Iletisim</h2>
+        <p>
+          Gelistirici/Kurum: ALI KILICLI<br />
+          E-posta: kilicliali96@gmail.com<br />
+          Adres: Konya Karapinar
+        </p>
+      </section>
+
+      <p class="footer">
+        Bu sayfa, uygulamanin guncel veri akisina gore periyodik olarak
+        yenilenmelidir.
+      </p>
+    </main>
+  </body>
+</html>
