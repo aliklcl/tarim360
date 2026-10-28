@@ -123,6 +123,6 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 
 ## 👨‍💻 Geliştirici
 
-**Ali Kılıç**  
+**Ali Kılıçlı**  
 * GitHub: [@kilicliali](https://github.com/kilicliali)  
 * Proje: [Tarım360 Repository](https://github.com/kilicliali/tarim360)
