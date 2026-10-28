@@ -100,7 +100,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 
 1. **Repoyu Klonlayın:**
    ```bash
-   git clone https://github.com/kilicliali/tarim360.git
+   git clone https://github.com/aliklcl/tarim360.git
    cd tarim360
    ```
 
@@ -124,5 +124,5 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 ## 👨‍💻 Geliştirici
 
 **Ali Kılıçlı**  
-* GitHub: [@kilicliali](https://github.com/kilicliali)  
-* Proje: [Tarım360 Repository](https://github.com/kilicliali/tarim360)
+* GitHub: [@aliklcl](https://github.com/aliklcl)  
+* Proje: [Tarım360 Repository](https://github.com/aliklcl/tarim360)
