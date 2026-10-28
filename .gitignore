@@ -116,3 +116,6 @@ run_windows_log.txt
 win_build_local_log.txt
 windows_build.cmd
 windows_run.cmd
+
+push_out.txt
+update_readme.py
